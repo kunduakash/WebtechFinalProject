@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="../assets/logo-img.webp" sizes="152x152" type="image/x-icon">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script defer src="../js/dashboard.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Logo</div>
+        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+        <div class="rightBox">
+            <div class="profile">
+                <div class="img"></div>
+                <div class="user"></div>
+            </div>
+            <button onclick="logout()">Logout</button>
+            <div class="date_time">
+                <h4 id="time"></h4>
+                <h4 id="date"></h4>
+            </div>
+        </div>
+    </nav>
+    <main id="main_container"></main>
+    <section id="popupbox">
+        <div id="popupclosebtn"><i class="fa-regular fa-circle-xmark"></i></div>
+        <div class="parent">
+            <div class="left">
+                <img id="productimg" src="" alt="">
+            </div>
+            <div class="right">
+                <h2 id="title"></h2>
+                <p class="category"></p>
+                <p class="price"></p>
+                <p class="rating"><span class="stars"></span> <span class="review"></span></p>
+                <p class="description"></p>
+                <div class="btns">
+                    <button><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
+                    <button><i class="fa-brands fa-opencart"></i> <span>Add to Cart</span></button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <div class="layer"></div>
+</body>
+</html>
